@@ -1,3 +1,5 @@
+const trackAllBtn = document.querySelectorAll(".track-btn-container button");
+
 const swiper = new Swiper(".swiper-container", {
   slidesPerView: 5,
   spaceBetween: 10,
@@ -27,4 +29,46 @@ const swiper = new Swiper(".swiper-container", {
       spaceBetween: 10,
     },
   },
+});
+
+// img scale
+
+window.addEventListener("load", function () {
+  document.querySelector(".services-img").classList.add("scale-image");
+});
+
+// pricing slider
+const pricingSwiper = new Swiper(".pricing-slider", {
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  pagination: {
+    el: ".pricing-pagination",
+    clickable: true,
+  },
+  slidesPerView: 1, // This is correct for full-width slides
+  spaceBetween: 0,
+});
+
+// track switcher
+function tShowImage(imageId) {
+  // Hide all images
+  var images = document.querySelectorAll(".track-img-container img");
+  images.forEach(function (image) {
+    image.classList.remove("active-img");
+  });
+
+  // Show the selected image
+  document.getElementById(imageId).classList.add("active-img");
+}
+trackAllBtn.forEach((b) => {
+  b.addEventListener("click", () => {
+    // Remove 'active-btn' class from all buttons first
+    trackAllBtn.forEach((btn) => btn.classList.remove("active-btn"));
+
+    // Add 'active-btn' class to the clicked button
+    b.classList.add("active-btn");
+  });
 });
