@@ -72,3 +72,17 @@ trackAllBtn.forEach((b) => {
     b.classList.add("active-btn");
   });
 });
+
+// faqs
+function toggleFAQ(element) {
+  const answer = element.nextElementSibling;
+  const icon = element.querySelector(".faq-icon");
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+    icon.textContent = "▶"; // Change icon to right arrow
+  } else {
+    answer.style.display = "block";
+    icon.textContent = "▼"; // Change icon to down arrow
+  }
+}
