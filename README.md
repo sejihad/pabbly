@@ -7,7 +7,7 @@ A responsive website built using HTML, CSS, and JavaScript to showcase front-end
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Getting Started](#getting-started)
-![Homepage Screenshot](screenshots/homepage.png)
+![Homepage Screenshot](assets/img/homepage.png)
 
 
 ## About the Project
