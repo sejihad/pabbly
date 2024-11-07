@@ -7,11 +7,11 @@ A responsive website built using HTML, CSS, and JavaScript to showcase front-end
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Screenshots](#screenshots)
-- [License](#license)
+![Homepage Screenshot](screenshots/homepage.png)
+
 
 ## About the Project
-This website was developed as a practice project to demonstrate proficiency in HTML, CSS, and JavaScript. It features a modern, clean design and is optimized for different screen sizes, providing a seamless experience on both desktop and mobile devices.
+This website was developed as a practice project to demonstrate proficiency in HTML, CSS, and JavaScript. It features a modern, clean design optimized for different screen sizes, providing a seamless experience on desktop and mobile devices.
 
 ## Technologies Used
 - **HTML**: For structuring the content
